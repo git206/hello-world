@@ -1,8 +1,9 @@
 #!groovy
+@Library('jenkins-pipeline-shared@master') _
 
 pipeline {
 //libraries {
-//  lib 'bitwiseman-shared@blog/declarative/notifications'
+//  lib 'jenkins-pipeline-shared@blog/declarative/notifications'
 //}
 //agent {
 //  // Use docker container
@@ -19,8 +20,8 @@ pipeline {
     stage ('Start') {
       steps {
         // send build started notifications
-//      sendNotifications 'STARTED'
         sh 'echo Start'
+        sendNotifications 'STARTED'
       }
     }
 /*  stage ('Install') {

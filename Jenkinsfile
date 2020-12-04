@@ -20,7 +20,7 @@ pipeline {
       steps {
         // send build started notifications
 //      sendNotifications 'STARTED'
-        sh 'Start'
+        sh 'echo Start'
       }
     }
 /*  stage ('Install') {

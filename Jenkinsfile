@@ -65,10 +65,9 @@ pipeline {
     }
 */
   }
-/*post {
+  post {
     always {
       sendNotifications currentBuild.result
     }
   }
-*/
 }
